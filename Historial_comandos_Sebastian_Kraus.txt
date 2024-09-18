@@ -1,0 +1,72 @@
+ssh-keygen
+ls -la
+ls .ssh/
+cat .ssh/id_rsa.pub
+pwd
+cat /etc/os-release 
+man grep
+grep -i Home_url /etc/os-release 
+whoami 
+mkdir repogit
+cd repogit/
+ls -la
+git clone https://github.com/sebakraus150/TP_AySO.git
+cd TP_AySO/
+echo "Usuario=$(whoami)" > datos_usuario.txt
+cat datos_usuario.txt 
+git add .
+git config --global user.email "sebakraus93@gmail.com"
+git config --global user.name "sebakraus150"
+git commit -m "ADD: agregado 1er ejercicio sobre datos_usuarios.txt"
+git status
+git push -u main origin
+git push origin main
+grep "model name" /proc/cpuinfo | tail -n1
+grep "model name" /proc/cpuinfo | tail -n1 >> datos_usuario.txt 
+cat datos_usuario.txt 
+git commit -m “feat:AñadiendoinformacióndeCPU”
+git add .
+git commit -m “feat:AñadiendoinformacióndeCPU”
+man grep 
+grep -v nologin | head -n10
+grep -v nologin /etc/passwd | head -n10
+grep -v nologin /etc/passwd | head -n10 | -k7
+grep -v nologin /etc/passwd | head -n10 | sort -k7
+grep -v nologin /etc/passwd | head -n10 | sort -k7 > lista_ordenada.txt
+
+git commit -m “ADD: Listado de usuarios ordenada”
+git status
+git commit -m "ADD: Listado de usuarios ordenada"
+map tcpdump 
+man tcpdump 
+sudo timeout 20 tcpdump -w comando_dump_net
+tcpdump -r comando_dump_net 
+sudo tcpdump -r comando_dump_net 
+vagrant@VMTP1:~/repogit/TP_AySO$ tcpdump -r comando_dump_net
+tcpdump: comando_dump_net: Permission denied
+
+
+sudo tcpdump -r comando_dump_net
+ls -l comando_dump_net 
+man tcpdump
+sudo timeout 30 tcpdump -w comando_dump_net
+
+sudo timeout 30 tcpdump -w comando_dump_net
+sudo tcpdump -r comando_dump_net
+sudo chown vagrant:vagrant comando_dump_net
+sudo tcpdump -r comando_dump_net
+ls -l comando_dump_net 
+git add .
+git status 
+git commit -m "ADD: Comando para capturar y analizar trafico de red. No probado"
+cat << EOF >> README.md 
+Alumno: Sebastián Kraus
+División: 116
+Turno: Mañana
+EOF
+
+git add .
+git commit -m "docs: Agrego información personal al README.md"
+history -a
+ls -la /home/
+history -a
